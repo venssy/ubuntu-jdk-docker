@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 # 设置环境变量，避免安装过程中出现交互式提示
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN timedatectl set-timezone Asia/Shanghai
+ENV TZ=Asia/Shanghai
 
 # 更新源并安装 OpenJDK 8
 RUN apt-get update && \
