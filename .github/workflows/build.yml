@@ -34,6 +34,6 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
